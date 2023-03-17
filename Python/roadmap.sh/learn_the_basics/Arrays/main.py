@@ -52,6 +52,16 @@ print(nomes.index('Pedro')) # Returns the index of the first element with the sp
 nomes.insert(1, 'Maria') # Adds an element at the specified position
 print(nomes)
 
+nomes.pop(3) #	Removes the element at the specified position
+print(nomes)
+
+nomes.remove('Pedro') # Removes the first item with the specified value
+print(nomes)
+
+nomes.reverse() # Reverses the order of the list
+print(nomes)
+
+nomes.sort() # Sorts the list
 print(nomes)
 
 nomes.clear() # Removes all the elements from the list
