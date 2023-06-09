@@ -1,0 +1,129 @@
+<!-- 
+  HTML Attributes
+  HTML attributes provide additional information about HTML elements.
+
+  * All HTML elements can have attributes
+  * attributes provide additional information about HTML elements
+  * attributes are always specified in the start tag
+  * attributes usually come in name/value pairs like: name="value"
+
+  The href attribute
+  The a tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to.
+ -->
+<a href="http://google.com">Link to Google</a>
+<hr>
+<!-- 
+  The src attribute
+
+  The img tag is used to embed (embutir) an image ins an HTML page. The src attribute specifies the path to the image to be displayed.
+
+  There are two ways to specify the URL in the src attribute
+
+  1. absolute url - links to an external image that is hosted on another website
+  
+  2. relative url - links to an image that is hosted within the website. here, the url does not include the domain name. if the url begins without a slash, it will be relative to the current page.
+ -->
+
+<!-- absolute URL -->
+<h1>absolute url</h1>
+<img src="https://www.navicat.com/images/02.Product_00_AllProducts_Premium15.png" alt="">
+<hr>
+<h1>relative url</h1>
+<!-- relative URL -->
+<img src="./assets/02.Product_00_AllProducts_Premium15.png" alt="">
+<hr>
+
+<!-- 
+  the width and hegth attributes
+
+  the img tag should also contain the width and height of the attributes, which specify the width and height of the image (in pixels).  
+ -->
+
+<img src="https://einvestidor.estadao.com.br/wp-content/uploads/2022/10/ouro_091020222638.jpg" width="500" height="380">
+<hr>
+<!-- 
+  The alt attribute
+  The required alt attribute for the img tag specifies an alternate text for an image, if the image for som reason cannot be displayed. This can be due to a slow connection, or an error in the src attribute, or if the user uses a screen reader.
+ -->
+<img
+  src="https://cdn.proactiveinvestors.cosm/eyJidWNrZXQiOiJwYS1jZG4iLCJrZXkiOiJ1cGxvYWRcL05ld3NcL0ltYWdlXC8yMDIyXzAyXC9zaHV0dGVyc3RvY2stMjU2Njc2MDg2XzYyMTBlMzE1M2VkZTcuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo2NzIsImdlaWdodCI6MzMxLCJmaXQiOiJjb3ZlciJ9fX0="
+  alt="Barras de prata" width="500" height="380">
+<hr>
+
+<!-- 
+    The style attribute
+    The style attribute is used to add styles to an element, such as color, font, size and more.
+    Example:
+   -->
+<p style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique facere maiores perferendis,
+  dolore consequuntur velit iure sit optio quae sunt cupiditate temporibus porro hic molestias odit molestiae adipisci
+  totam magni.</p>
+<hr>
+
+<!-- 
+    The lang attribute
+    You should always include the lang attribute nside the html tag, to declare the language of the web page. This is meant to assist search engines and browsers.
+    The following exapome specifies English as the language
+   -->
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+
+</body>
+
+</html>
+
+<!-- Country code can also be added to the language code in the lang attribute. So, the first two characaters define the laguage of the html page, and the last two characters define the country -->
+<!DOCTYPE html>
+<html lang="en-US">
+
+<body>
+
+</body>
+
+</html>
+<hr>
+<!-- 
+  The title attrbute
+  The title attribute defines some extra informationabout an element
+  The value of the title attribute will be displayed as a tooltip when you mouse over the element
+  Example:
+ -->
+<p title="This is a text genereted with lorem ipsum">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+  voluptas laboriosam harum, quia porro repudiandae maiores voluptate iusto dolorum asperiores possimus rerum aspernatur
+  non consequatur ullam deserunt delectus repellat ipsum.</p>
+<hr>
+
+
+<!-- 
+  We suggest: Always use lowercase attributes
+  The html standard does not require lowercase attribute names.
+  the title attribute (and all other attributes) can be written with uppercase or lowercase like title ou TITLE
+  However, W3C recommends lowercase attributes for stricter document types liek XHTML.
+
+
+  We suggest: Always use quote attributes values
+  The html standard does not require quote arround attribute values
+  However, W3C recommends quotes in html, and demands quotes for stricter document types like XHTML
+ -->
+
+<h1>Good</h1>
+<p title="Paragrafo com lorem ipsum">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id numquam quos, nulla
+  sunt quas saepe dolorum. Itaque consectetur quas nulla adipisci modi cum, ratione quibusdam atque alias voluptatum
+  pariatur! Ad?</p>
+<h1>Bad</h1>
+<p title=Paragrafo com lorem ipsum>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id numquam quos, nulla sunt
+  quas saepe dolorum. Itaque consectetur quas nulla adipisci modi cum, ratione quibusdam atque alias voluptatum
+  pariatur! Ad?</p>
+<hr>
+
+
+<!-- 
+    Single or double quotes?
+    Double quotes arround attribute values are the most common in html, but single quotes can also be used.
+    In some stuations, when the attribute value irself contains double quotes, it is necessary to use single quotes
+   -->
+
+<a href="#" title='Never "stop learnng"'>Link</a>
+<hr>
