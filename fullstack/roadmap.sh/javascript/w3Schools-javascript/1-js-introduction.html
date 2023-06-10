@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        pre {
+            color: blue;
+        }
+
+        code>b {
+            color: red;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <h1>JavaScript Introduction</h1>
+        <h2>JS Can change html content</h2>
+        <p>
+            One of many js html methods is "<b><code>getElementById()</code></b>"<br>
+            The example below "finds" an html element (with id="demo") and changes the element content (innerHTML) to
+            "Hello JavaScript"
+        </p>
+
+        <pre>
+            <code>
+                <b>double quotes</b>
+                document.getElementById("demo").innerHTML = "Hello JavaScript"
+                <b>single quotes</b>
+                document.getElementById('demo').innerHTML = 'Hello JavaScript' 
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>JS Can change html attribute values</h2>
+        <p>
+            In this example js changes the value of the src (source) attribute of an img tag
+        </p>
+
+        <pre>
+            <code>
+                    img src="./img1.jpg" alt="" id="img1"
+                    button onclick="getElementById('img1').src='./img2.jpg'">Change img button 
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>JS Can change html css styles (css)</h2>
+        <p>
+            Changing the style of an html element is a variant of changing an html attribute
+        </p>
+
+        <pre>
+            <code>
+                    document.getElementById('demo').style.fontSize = '35px';
+                    document.getElementById('demo').style.color = 'red';
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>JS Can hide html css styles</h2>
+        <p>
+            Hiding html elements can be done by changing the display style
+        </p>
+
+        <pre>
+            <code>
+                    document.getElementById('demo').style.display = 'none';
+            </code>
+        </pre>
+    </section>
+
+    <section>
+        <h2>JS Can show html css styles</h2>
+        <p>
+            Showing html elements can also be done by changing the display style
+        </p>
+
+        <pre>
+            <code>
+                    document.getElementById('demo').style.display = 'blockd';
+            </code>
+        </pre>
+    </section>
+
+
+</body>
+
+</html>
