@@ -1,0 +1,179 @@
+<!-- 
+    CSS Selectors
+
+    A css selector selects the html element(s) 
+
+    css selectors are used to find or select the html elements you want to style
+    we can divide css selectors into five categories:
+
+    1. SIMPLE SELECTORS (select elements based on name, id, class)
+    2. COMBINATOR SELECTORS (select elements based on a specific relationship between them)
+    3. PSEUDO-CLASS SELECTORS (select elements based on a certain state)
+    4. PSEUDO-ELEMENTS SELECTORS (select and style a part of an element)
+    5. ATTRIBUTE SELECTORS (select elements based on an attribute or attribute value)
+ -->
+<style>
+    code {
+        font-weight: bolder !important;
+        color: blue;
+    }
+</style>
+<p>
+<h1>The CSS Element selector.</h1>
+here all p elements on the page will be center-alligned with a red text color.
+</p>
+<pre>
+    <code>
+        p {
+            text-align: center;
+            color: red;
+        }
+    </code>
+</pre>
+<hr>
+
+
+<p id="teste1">
+<h1>The CSS ID selector.</h1>
+The id selector uses id attribute of an html element to select a specific element
+The id of an element is unique within a page, so the id selector is used to select one unique element.
+To select an element with a specific id write a hash # character followed by the id of the element.
+</p>
+<pre>
+    <code>
+        #teste1 {
+            text-align: center;
+            color: red;
+        }
+    </code>
+</pre>
+<hr>
+
+<p class="teste2">
+<h1>The CSS Class selector.</h1>
+The class selector selects html elements with a specific class attribute
+To select elements with a specific class write a period . character, followed by the class name
+</p>
+<pre>
+    <code>
+        .teste2 {
+            text-align: center;
+            color: red;
+        }
+        <br>
+        <!-- You can also specify that only specific html elements should be affected by a class. In this example only p elements with a class teste2 will be red and center-aligned -->
+        p.teste2 {
+            text-align: center;
+            color: red;
+        }
+    </code>
+</pre>
+<hr>
+
+<!-- 
+    HTML elements can also refer to more than one class
+    In this example the p element will be styled according to class center and to class large
+ -->
+<h1>More than one classes on elements</h1>
+<pre>
+    <code>
+        <p class="center large">Lorem ipsum dolor, sit amet consectetur</p>
+     </code>
+</pre>
+<hr>
+
+<h1>The CSS Universal selector</h1>
+<p>
+    The css universal selector (*) selects all html elements on the page <br>
+    The css rule below will affect every html element on the page
+</p>
+<pre>
+    <code>
+        * {
+            text-align: center;
+            color> blue;
+        }
+    </code>
+</pre>
+<hr>
+
+<h1>The css grouping selector</h1>
+<p>
+    The grouping selector selects all the html elements with the same style definitions <br>
+    Look at the following css code (the h1, h2 and p havev the same style definitions)
+</p>
+<pre>
+    <code>
+
+        h1 {
+            text-align: center;
+            color: red;
+        }
+
+        h2 {
+            text-align: center;
+            color: red;
+        }
+
+        p {
+            text-align: center;
+            color: red;
+        }
+    </code>
+</pre>
+<p>
+    It will be better to group the selectors to minimize the code <br>
+    To group selectors separate each selector with a comma
+</p>
+<pre>
+    <code>
+        h1, h2, p {
+            text-align: center;
+            color: red;
+        }
+    </code>
+</pre>
+<hr>
+
+<h1>All CSS simple selectors</h1>
+<table border="1px">
+    <thead>
+        <tr>
+            <th>Selector</th>
+            <th>Example</th>
+            <th>Example description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>#id</td>
+            <td>#firstname</td>
+            <td>Selects the element with id="firstname"</td>
+        </tr>
+        <tr>
+            <td>.class</td>
+            <td>.intro</td>
+            <td>Select all elements with class="intro"</td>
+        </tr>
+        <tr>
+            <td>element.class</td>
+            <td>p.intro</td>
+            <td>Select only p elements with class="intro"</td>
+        </tr>
+        <tr>
+            <td>*</td>
+            <td>*</td>
+            <td>Selects all elements</td>
+        </tr>
+        <tr>
+            <td>element</td>
+            <td>p</td>
+            <td>Selects all p elements</td>
+        </tr>
+        <tr>
+            <td>element, element</td>
+            <td>div, p</td>
+            <td>Selects all div elements and all p elements</td>
+        </tr>
+    </tbody>
+</table>
