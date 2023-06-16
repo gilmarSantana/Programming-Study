@@ -1,0 +1,14 @@
+/* 
+  An external style can be written in any text editor, and must be saved with a .cc extensioni.
+  The external .css fle should not contan any html tags
+*/
+
+body {
+    background-color: rgb(47, 8, 119) !important;
+}
+
+h1,
+h2 {
+    color: rgb(214, 74, 114);
+    margin-left: 20px;
+}

@@ -1,0 +1,61 @@
+<style>
+  .color {
+    color: rgb(245, 255, 110);
+    background-color: navy;
+    padding: 3px;
+    font-style: italic;
+    display: inline;
+  }
+</style>
+<h1>Javascript Output</h1>
+<h2>Javascript display possibilites</h2>
+<h3>Javascript can display data in different ways:</h3>
+<ul>
+  <li>Writing into an html element using innerHTML</li>
+  <li>Writing into the html output using document.write()</li>
+  <li>Writing into an alert box, using window.alert()</li>
+  <li>Writing into the browser console, using console.log()</li>
+</ul>
+<hr>
+<h1>Using innerHTML</h1>
+<p>
+  To access an html element, Javascript can use the <span class="color">document.getElementById(id)</span> method. <br>
+  The <span class="color">id</span> attribute defines the html element. The innerHTML property defines the html content.
+</p>
+<p class="color" id="demo"></p>
+
+<hr>
+
+<h1>Using document.write()</h1>
+<p>
+  For testing purposes, it s convenient to use <span class="color">document.write()</span><br>
+  The document.write() method should only be used for testing.
+</p>
+<hr>
+<h1>Using window.alert()</h1>
+<p>
+  You can use an alert box to display data
+  <button onclick="alert('Hey Human!!!')">Alerta</button>
+  <br>
+  You can skip the window keyword <br>
+  In javascript, the window object is the global scope object. This means that variables, properties, and methods by
+  default belong to the window object. This also means that specifying the window keyword is optional.
+</p>
+<hr>
+<h1>Using console.log()</h1>
+<p>
+  For debugging purposes, you can call the console.log() method in the browser to display data.
+  <button onclick="console.log('Hey  human!!!')">console.log</button>
+</p>
+
+
+
+
+
+
+
+<script>
+  document.getElementById('demo').innerHTML = 5 + 6;
+  document.write('Escrito com document.wrte()');
+
+</script>
