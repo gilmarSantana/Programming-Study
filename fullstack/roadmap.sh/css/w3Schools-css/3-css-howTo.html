@@ -1,0 +1,99 @@
+<style>
+    code {
+        font-weight: bolder !important;
+        color: blue;
+    }
+</style>
+
+<h1>How to add css</h1>
+
+<p>
+    When a browser reads a style sheet, it will format the html document accortding to the informatin in the style
+    sheet.
+</p>
+
+<h2>There are three ways to insert css</h2>
+<ul>
+    <li>External css</li>
+    <li>Internal css</li>
+    <li>Inline css</li>
+</ul>
+<hr>
+<h1>External css</h1>
+<p>With an external style sheet, you can change the look of an entire website b changing just one file. <br> Each html
+    page must include a reference to the external style sheet file inside the link element, inside the head section.
+    Example:</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./3-css-howTo.css">
+</head>
+
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph</p>
+</body>
+
+</html>
+<hr>
+
+<h1>Internal css</h1>
+<p>An internal style sheet may be used if one single html page has a unique style. <br> The internal style is defined
+    inside the style element, inside the head section. Example:</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p,
+        li {
+            color: rgb(173, 255, 80);
+            font-weight: 900;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>
+<hr>
+<h1>Inline css</h1>
+<p>
+    An inline style may be used to apply a unique style for a single element. <br>
+    To use nline styles, add the style attribute to the releveant element. The style attribute can contain any css
+    porperty. Example:
+</p>
+
+<h1 style="color:rgb(250, 255, 96); font-size: 34px;">Text with inline css</h1>
+
+<hr>
+
+<h1>Orientations</h1>
+<h2>Multiple style sheets</h2>
+<p>
+    If some properties have been defined for the same selector in different style sheets, the value from the last read
+    style sheet will be used.
+</p>
+
+<h2>Cascading order</h2>
+<p>
+    What style will be used when there is more than one style specified for a html element?<br>
+    All the styles in a page will cascade into a new virtual style sheet by the following rules, where number one has
+    the highest priority:
+<ol>
+    <li>Inline style</li>
+    <li>External and internal style sheets</li>
+    <li>Browser default</li>
+</ol><br>
+So, an inline style has the highest priority, and will override external and internal styles and browser defaults.
+</p>
