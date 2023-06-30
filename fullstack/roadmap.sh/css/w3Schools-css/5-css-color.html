@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            border: 1px solid silver;
+            display: inline-block;
+        }
+
+        img{
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Colors are specified using predefined color names, or rgb, hex, hsl, rgba, hsla value.</p>
+
+    <h1>CSS Color Names</h1>
+    <p>
+        In css a color can be specified by using a predefined color name:
+    <div class="div" style="background-color: tomato;"></div>
+    <div class="div" style="background-color: orange;"></div>
+    <div class="div" style="background-color: dodgerBlue;"></div>
+    <div class="div" style="background-color: mediumSeaGreen;"></div>
+    <div class="div" style="background-color: gray;"></div>
+    <div class="div" style="background-color: slateBlue;"></div>
+    <div class="div" style="background-color: violet;"></div>
+    <div class="div" style="background-color: lightGray;"></div>
+    </p>
+    <hr>
+
+    <h1>CSS Background Color</h1>
+    <p>You can set the background color for HTML elements:</p>
+    <h1 style="background-color:DodgerBlue;">Hello World</h1>
+    <p style="background-color:Tomato;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore consectetur
+        enim labore libero odio, aspernatur dolor porro sequi omnis fugiat aliquid placeat! Quam vitae recusandae fugiat
+        hic adipisci in dicta!</p>
+    <hr>
+
+    <h1>CSS Text Color</h1>
+    <p>You can set the color of text:</p>
+    <h1 style="color:Tomato;">Hello World</h1>
+    <p style="color:DodgerBlue;">Lorem ipsum...</p>
+    <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+    <hr>
+
+    <h1>CSS Border Color</h1>
+    <p>You can set the color of borders:</p>
+    <h1 style="border:2px solid Tomato;">Hello World</h1>
+    <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+    <h1 style="border:2px solid Violet;">Hello World</h1>
+    <hr>
+
+    <h1>CSS Color Values</h1>
+    <p>In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:</p>
+
+    <p>Same as color name "Tomato":</p>
+    <h1 style="background-color:rgb(255, 99, 71);">...</h1>
+    <h1 style="background-color:#ff6347;">...</h1>
+    <h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+
+    <p>Same as color name "Tomato", but 50% transparent:</p>
+    <h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+    <h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+    <hr>
+
+    <h1>CSS RGB Colors</h1>
+    <p>An rgb color value represents RED, GREEN, and BLUE light sources.</p>
+
+    <h2>RGB Value</h2>
+    <p>Is css, a color can be specified as an rgb value using this formula: <br><b>rgb(red, blue, green)</b></p>
+    <p>
+        Each parameter defines the intendity of the color between 0 and 255. <br>
+        For example, rgb(255,0,0) is displayed as red, because red is set to its highest value 255 and the others are
+        set to 0.
+        <br>
+        To display black, set all color parameters to 0, like rgb(0, 0, 0)
+        <br>
+        To display white, set all color parameters to 255, like rgb(255, 255, 255).
+    </p>
+    <h2>RGBA Value</h2>
+    <p>
+        RGBA color values are an extension of rgb color values with an alpha channel - which specifies the opacity for a
+        color.
+        <br>
+        An rgba color value is specified with:
+        <br>
+        <b>rgba(red, green, blue, alpha)</b>
+        <br>
+        The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all).
+
+    <div class="div" style="background-color: rgba(10, 111, 22, 0.3);"></div>
+    <div class="div" style="background-color: rgba(255, 99, 71, 0.2)
+        ;"></div>
+    <div class="div" style="background-color: rgba(115, 99, 71, 1)
+        ;"></div>
+    </p>
+    <p>
+        RGB é um acrônimo para "Red, Green, Blue" (Vermelho, Verde, Azul). É um sistema de cores aditivo que é
+        amplamente utilizado para representar cores em dispositivos eletrônicos, como monitores de computador, TVs e
+        câmeras digitais.
+
+        No modelo RGB, cada cor é representada por uma combinação de intensidades de vermelho (Red), verde (Green) e
+        azul (Blue). Cada componente de cor varia de 0 a 255, onde 0 representa a ausência da cor e 255 representa a
+        intensidade máxima da cor. Ao combinar diferentes intensidades dessas três cores primárias, podemos obter uma
+        ampla gama de cores.
+
+        Por exemplo:
+
+        RGB(255, 0, 0) representa a cor vermelha pura, com intensidade máxima de vermelho e nenhuma intensidade de verde
+        e azul.
+        RGB(0, 255, 0) representa a cor verde pura, com intensidade máxima de verde e nenhuma intensidade de vermelho e
+        azul.
+        RGB(0, 0, 255) representa a cor azul pura, com intensidade máxima de azul e nenhuma intensidade de vermelho e
+        verde.
+        Ao combinar diferentes valores de intensidade de vermelho, verde e azul, podemos criar uma ampla variedade de
+        cores visíveis no espectro RGB.
+    </p>
+    <p>
+        RGBA é uma extensão do modelo de cor RGB, com o acréscimo de um quarto componente, o "A" que representa o canal
+        alfa (alpha). Enquanto o RGB define a intensidade de vermelho, verde e azul para representar cores, o RGBA
+        inclui o canal alfa para representar a transparência.
+
+        No modelo RGBA, cada componente de cor (vermelho, verde, azul) varia de 0 a 255, da mesma forma que no modelo
+        RGB. o canal alfa normalmente varia de 0 a 1, não de 0 a 255. O valor 0 indica transparência total (totalmente
+        transparente), enquanto o valor 1 indica opacidade total (totalmente opaco). Essa é a convenção mais comummente
+        utilizada em muitas linguagens de programação e softwares gráficos.
+
+        A ordem dos componentes no modelo RGBA é a seguinte: RGBA(red, green, blue, alpha). Os valores são especificados
+        em números inteiros separados por vírgulas, e normalmente são representados em um intervalo de 0 a 1 ou de 0 a
+        100% em algumas linguagens e softwares.
+
+        Por exemplo:
+
+        RGBA(255, 0, 0, 0.5) representa a cor vermelha com uma transparência de 50%.
+        RGBA(0, 255, 0, 0.75) representa a cor verde com uma transparência de 75%.
+        RGBA(0, 0, 255, 1) representa a cor azul totalmente opaca.
+        O canal alfa permite que objetos e cores sejam sobrepostos e combinados com diferentes níveis de transparência,
+        criando efeitos de camadas e transparências em elementos visuais. O modelo RGBA é comumente utilizado em
+        gráficos, design web e em aplicativos que requerem controle preciso da transparência dos elementos visuais.
+    </p>
+    <hr>
+
+    <h1>CSS HEX Colors</h1>
+    <p>A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers
+        specify the components of the color.</p>
+    <h2>HEX Value</h2>
+    <div class="div" style="background-color: #ff6347;"></div>
+    <div class="div" style="background-color: #ff0000;"></div>
+    <div class="div" style="background-color: #ffa500;"></div>
+    <p style="font-family: verdana;">
+        Sometimes you will see a 3-digit hex code in the CSS source.
+        The 3-digit hex code is a shorthand for some 6-digit hex codes.
+
+        The 3-digit hex code has the following form:<br>
+
+        <b>#rgb</b>
+        <br>
+
+        Where r, g, and b represent the red, green, and blue components with values between 0 and f. <br>
+
+        The 3-digit hex code can only be used when both the values (RR, GG, and BB) are the same for each component. So,
+        if we have #ff00cc, it can be written like this: #f0c.
+
+        Here is an example:
+    </p>
+    <div class="div" style="background-color: #fc9;"></div>
+    <div class="div" style="background-color: #f0f;"></div>
+    <div class="div" style="background-color: #b58;"></div>
+    <div class="div" style="background-color: #c4f;"></div>
+    <div class="div" style="background-color: #6d9;"></div>
+    <div class="div" style="background-color: #9aaaa9;"></div>
+    <hr>
+
+    <h1>CSS HSL Colors</h1>
+    <p>
+        HSL stands for hue (matiz), saturation (saturação) and lightness (leveza)
+    </p>
+    <h2>HSL Value</h2>
+    <p>
+        In css a color can be specified using hue, saturation and lightness in the form: <br>
+        <b>hsl(hue, saturation, lightness)</b> <br>
+        Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green and 240 is blue. <br>
+        Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color. <br>
+        Lightness is also a percentage. 0% is black, 50% is neither ligth or dark, 100% is white.
+    </p>
+    <div>
+        <h1 class="div" style="background-color: hsl(2, 100%, 50%);">hsl</h1>
+        <h1 class="div" style="background-color: hsl(39, 100%, 50%);">hsl</h1>
+    </div>
+
+    <h3>Saturation</h3>
+    <p>
+        Saturation can be described as the intensity of a color.
+        100% is pure color, no shades of gray.
+        50% is 50% gray, but you can still see the color.
+        0% is completely gray; you can no longer see the color.
+    </p>
+    <div class="div" style="background-color: hsl(0, 100%, 50%)
+    ;">100%</div>
+    <div class="div" style="background-color: hsl(0, 80%, 50%)
+    ;">80%</div>
+    <div class="div" style="background-color: hsl(0, 20%, 50%)
+    ;">20%</div>
+    <div class="div" style="background-color: hsl(0, 0%, 50%)
+    ;">0%</div>
+    <br>
+    <h3>Lightness</h3>
+    <p>
+        The lightness of a color can be described as how much light you want to give the color, where 0% means no light
+        (black), 50% means 50% light (neither dark nor light) and 100% means full lightness (white).
+    </p>
+    <div class="div" style="color:#fff;background-color: hsl(0, 100%, 0%)
+    ;">0%</div>
+    <div class="div" style="background-color: hsl(0, 100%, 25%)
+    ;">25%</div>
+    <div class="div" style="background-color:hsl(0, 100%, 75%)
+    ;">75%</div>
+    <div class="div" style="background-color: hsl(0, 100%, 95%)
+    ;">95%</div>
+
+    <div>
+        <h1>HSL DEGREES GUIDE</h1>
+        <img src="./assets/hsl hue guide.png" alt="">
+        <img src="./assets/name, hue, rgb guide.jpg" alt="">
+    </div>
+</body>
+
+</html>
