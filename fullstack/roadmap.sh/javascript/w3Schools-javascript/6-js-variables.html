@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .rf {
+            background-color: #04AA6D99;
+            padding: 25px;
+            border-radius: 10px;
+            
+        }
+        .note {
+            background-color: #ffdc3e99;
+            padding: 25px;
+            border-radius: 10px;
+            
+        }
+
+        b {
+            color: red;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Javascript Variables</h1>
+    <div class="rf">
+        <p>
+        <h3>Variables are containers for storing data</h3>
+        Javascript variables can be declared in 4 ways:
+        <ul>
+            <li>Automatically</li>
+            <li>Using <b>var</b></li>
+            <li>Using <b>let</b></li>
+            <li>Using <b>const</b></li>
+        </ul>
+        </p>
+    </div>
+    <p>
+        In this first example, x, y and z are undeclared variables. <br>
+        They are Automatically declared when first used: <br>
+
+        <pre>
+            <code>
+                x = 5;
+                y = 6;
+                z = x + y;
+            </code>
+        </pre>
+
+        <div>
+            <div  class="note">                
+                <h1>Note</h1>
+                <p>
+                    It is considered good programming practice to always declare variables before use
+                </p>
+            </div>
+            <p>
+                From the examples you can guess:
+                <ul>
+                    <li>x stores the value 5</li>
+                    <li>y stores the value 6</li>
+                    <li>z stores the value 11</li>
+                </ul>
+                Example using var: <br>
+                <pre>
+                    <code>
+                        var x = 5;
+                        var y = 6;
+                        var z = x + y;
+                    </code>
+                </pre>
+            </p>
+            <div class="note">
+                <h1>Note</h1>
+                <p>The <b>var</b> keyword was used in all javascript code from 1995 to 2015.</p>
+                <p>The <b>let</b> and <b>const</b> kwywords were added to javascript in 2015.</p>
+                <p>The <b>var</b> should only be used in code written for older browsers</p>
+            </div>
+            <p>
+                Example using let: <br>
+                <pre>
+                    <code>
+                        let x = 5;
+                        let y = 6;
+                        let z = x + y;
+                    </code>
+                </pre>
+                Example using const: <br>
+                <pre>
+                    <code>
+                        const x = 5;
+                        const y = 6;
+                        const z = x + y;
+                    </code>
+                </pre>
+                Mixed example: <br>
+                <pre>
+                    <code>
+                        const price1 = 5;
+                        const price2 = 6;
+                        let total = price1 + price2;
+                    </code>
+                </pre>
+                <div class="note">
+                    <h1>When to use var, let or const?</h1>
+                    <ol>
+                        <li>Always declare variables</li>
+                        <li>Always use const if the value should not be changed</li>
+                        <li>Always use const if the type should not be changed (Arrays and Objects)</li>
+                        <li>Only use let if you can't use const</li>
+                        <li>Only use var if you MUST support old browsers</li>
+                    </ol>
+                </div>
+            </p>
+        </div>
+    </p>
+    <hr>
+</body>
+
+</html>
